@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "input": "Check out our official website at https://example.com and subscribe!",
+    "expected_urls": ["https://example.com"]
+  },
+  {
+    "id": 2,
+    "input": "Follow us on Twitter: https://twitter.com/example and Instagram: https://instagram.com/example",
+    "expected_urls": ["https://twitter.com/example", "https://instagram.com/example"]
+  },
+  {
+    "id": 3,
+    "input": "Buy the equipment here: amzn.in/d/01VZ or check linktr.ee/mychannel for more.",
+    "expected_urls": ["https://amzn.in/d/01VZ", "https://linktr.ee/mychannel"]
+  },
+  {
+    "id": 4,
+    "input": "Watch next video: youtu.be/dQw4w9WgXcQ right now!",
+    "expected_urls": ["https://youtu.be/dQw4w9WgXcQ"]
+  },
+  {
+    "id": 5,
+    "input": "Read more on Wikipedia (https://en.wikipedia.org/wiki/Python_(programming_language)) for details.",
+    "expected_urls": ["https://en.wikipedia.org/wiki/Python_(programming_language)"]
+  },
+  {
+    "id": 6,
+    "input": "Visit www.cloudflare.com for web security solutions.",
+    "expected_urls": ["https://www.cloudflare.com"]
+  },
+  {
+    "id": 7,
+    "input": "Connect with me @johndoe or email contact@example.com for business.",
+    "expected_urls": []
+  },
+  {
+    "id": 8,
+    "input": "#python #programming #coding tutorials every Tuesday!",
+    "expected_urls": []
+  },
+  {
+    "id": 9,
+    "input": "Get 20% off at shop.brand.store/discount with coupon code SPECTRA.",
+    "expected_urls": ["https://shop.brand.store/discount"]
+  },
+  {
+    "id": 10,
+    "input": "Documentation available at [https://docs.github.com/en] and source at github.com/spectra/app.",
+    "expected_urls": ["https://docs.github.com/en", "https://github.com/spectra/app"]
+  },
+  {
+    "id": 11,
+    "input": "Check this: http://insecure-site.org/download.zip for the materials.",
+    "expected_urls": ["http://insecure-site.org/download.zip"]
+  },
+  {
+    "id": 12,
+    "input": "Download files from ftp://ftp.gnu.org/gnu/emacs today.",
+    "expected_urls": ["ftp://ftp.gnu.org/gnu/emacs"]
+  },
+  {
+    "id": 13,
+    "input": "Join our community discord.gg/codinghub and reddit.com/r/learnprogramming",
+    "expected_urls": ["https://discord.gg/codinghub", "https://reddit.com/r/learnprogramming"]
+  },
+  {
+    "id": 14,
+    "input": "Visit https://site.co.uk/news and https://domain.com.au/home.",
+    "expected_urls": ["https://site.co.uk/news", "https://domain.com.au/home"]
+  },
+  {
+    "id": 15,
+    "input": "Special thanks to our sponsors: brand.ai, tools.dev, and server.cloud!",
+    "expected_urls": ["https://brand.ai", "https://tools.dev", "https://server.cloud"]
+  },
+  {
+    "id": 16,
+    "input": "My portfolio: dev.page/alex and blog at blog.alex.io.",
+    "expected_urls": ["https://dev.page/alex", "https://blog.alex.io"]
+  },
+  {
+    "id": 17,
+    "input": "Subscribe to @ApnaCollegeOfficial and visit apnacollege.in/courses for notes.",
+    "expected_urls": ["https://apnacollege.in/courses"]
+  },
+  {
+    "id": 18,
+    "input": "Questions? Email support@apnacollege.in or tweet @apnacollege.",
+    "expected_urls": []
+  },
+  {
+    "id": 19,
+    "input": "Links: (https://example.com/link1), (https://example.com/link2).",
+    "expected_urls": ["https://example.com/link1", "https://example.com/link2"]
+  },
+  {
+    "id": 20,
+    "input": "Search query: https://google.com/search?q=fastapi+tutorial&hl=en#section2",
+    "expected_urls": ["https://google.com/search?q=fastapi+tutorial&hl=en#section2"]
+  },
+  {
+    "id": 21,
+    "input": "Read Wikipedia article on C (https://en.wikipedia.org/wiki/C_(programming_language)) right now.",
+    "expected_urls": ["https://en.wikipedia.org/wiki/C_(programming_language)"]
+  },
+  {
+    "id": 22,
+    "input": "Bare link bit.ly/spectra-demo and t.co/shortlink here.",
+    "expected_urls": ["https://bit.ly/spectra-demo", "https://t.co/shortlink"]
+  },
+  {
+    "id": 23,
+    "input": "Visit https://de.wikipedia.org, https://fr.wikipedia.org, and https://ja.wikipedia.org",
+    "expected_urls": ["https://de.wikipedia.org", "https://fr.wikipedia.org", "https://ja.wikipedia.org"]
+  },
+  {
+    "id": 24,
+    "input": "Check this tool: web.archive.org/web/2026/https://google.com",
+    "expected_urls": ["https://web.archive.org/web/2026/https://google.com"]
+  },
+  {
+    "id": 25,
+    "input": "No links here, just plain text describing the video content and thoughts.",
+    "expected_urls": []
+  },
+  {
+    "id": 26,
+    "input": "My social handles: IG: @creator_123, TikTok: @real_creator, Twitter: @creator_official",
+    "expected_urls": []
+  },
+  {
+    "id": 27,
+    "input": "Support us on patreon.com/channel or buymeacoffee.com/creator!",
+    "expected_urls": ["https://patreon.com/channel", "https://buymeacoffee.com/creator"]
+  },
+  {
+    "id": 28,
+    "input": "Download the app: apps.apple.com/app/id12345 or play.google.com/store/apps/details?id=com.app",
+    "expected_urls": ["https://apps.apple.com/app/id12345", "https://play.google.com/store/apps/details?id=com.app"]
+  },
+  {
+    "id": 29,
+    "input": "Join telegram: t.me/officialchannel and whatsapp: chat.whatsapp.com/invite123",
+    "expected_urls": ["https://t.me/officialchannel", "https://chat.whatsapp.com/invite123"]
+  },
+  {
+    "id": 30,
+    "input": "Our German portal: spiegel.de, French news: lemonde.fr, and Italian: corriere.it",
+    "expected_urls": ["https://spiegel.de", "https://lemonde.fr", "https://corriere.it"]
+  },
+  {
+    "id": 31,
+    "input": "Check our tech stack: react.dev, nextjs.org, and tailwindcss.com.",
+    "expected_urls": ["https://react.dev", "https://nextjs.org", "https://tailwindcss.com"]
+  },
+  {
+    "id": 32,
+    "input": "Listen to the podcast on spotify.com/show/123 or podcasts.apple.com/us/podcast/id456",
+    "expected_urls": ["https://spotify.com/show/123", "https://podcasts.apple.com/us/podcast/id456"]
+  },
+  {
+    "id": 33,
+    "input": "Donations: crypto.org/wallet or btc.me/pay",
+    "expected_urls": ["https://crypto.org/wallet", "https://btc.me/pay"]
+  },
+  {
+    "id": 34,
+    "input": "Indian services: irctc.co.in, uidai.gov.in, and flipkart.com for shopping.",
+    "expected_urls": ["https://irctc.co.in", "https://uidai.gov.in", "https://flipkart.com"]
+  },
+  {
+    "id": 35,
+    "input": "Duplicate test: https://example.com/page and https://EXAMPLE.COM/page should be one.",
+    "expected_urls": ["https://example.com/page"]
+  },
+  {
+    "id": 36,
+    "input": "Trailing exclamation! Visit https://mysite.org/launch!",
+    "expected_urls": ["https://mysite.org/launch"]
+  },
+  {
+    "id": 37,
+    "input": "Quotes test: 'https://quote-single.com' and \"https://quote-double.com\"",
+    "expected_urls": ["https://quote-single.com", "https://quote-double.com"]
+  },
+  {
+    "id": 38,
+    "input": "Angle brackets: <https://bracket-angle.com/spec> should be cleanly extracted.",
+    "expected_urls": ["https://bracket-angle.com/spec"]
+  },
+  {
+    "id": 39,
+    "input": "Check out medium.com/@author/my-article-slug for the written version.",
+    "expected_urls": ["https://medium.com/@author/my-article-slug"]
+  },
+  {
+    "id": 40,
+    "input": "Subdomains test: a.b.c.example.com/test and api.v2.service.io/status",
+    "expected_urls": ["https://a.b.c.example.com/test", "https://api.v2.service.io/status"]
+  },
+  {
+    "id": 41,
+    "input": "Estonian startup: wise.com/ee and bolteu.ee/drive",
+    "expected_urls": ["https://wise.com/ee", "https://bolteu.ee/drive"]
+  },
+  {
+    "id": 42,
+    "input": "Swiss banking: ubs.ch and credit-suisse.ch/portal",
+    "expected_urls": ["https://ubs.ch", "https://credit-suisse.ch/portal"]
+  },
+  {
+    "id": 43,
+    "input": "Check out youtu.be/dQw4w9WgXcQ?t=42s with timestamp.",
+    "expected_urls": ["https://youtu.be/dQw4w9WgXcQ?t=42s"]
+  },
+  {
+    "id": 44,
+    "input": "Brazilian domain: globo.com.br and uol.com.br/noticias",
+    "expected_urls": ["https://globo.com.br", "https://uol.com.br/noticias"]
+  },
+  {
+    "id": 45,
+    "input": "Japanese portals: yahoo.co.jp and rakuten.co.jp/search",
+    "expected_urls": ["https://yahoo.co.jp", "https://rakuten.co.jp/search"]
+  },
+  {
+    "id": 46,
+    "input": "Spanish newspaper: elpais.com and elmundo.es/espana",
+    "expected_urls": ["https://elpais.com", "https://elmundo.es/espana"]
+  },
+  {
+    "id": 47,
+    "input": "Nordic links: nrk.no, svt.se, and yle.fi/uutiset",
+    "expected_urls": ["https://nrk.no", "https://svt.se", "https://yle.fi/uutiset"]
+  },
+  {
+    "id": 48,
+    "input": "African news: news24.com and daily-nation.ke/news",
+    "expected_urls": ["https://news24.com", "https://daily-nation.ke/news"]
+  },
+  {
+    "id": 49,
+    "input": "Only hashtags and mentions: #tech #review @gadgetreviewer @techtips",
+    "expected_urls": []
+  },
+  {
+    "id": 50,
+    "input": "Multiple emails: hello@test.com, sales@company.org, info@domain.net",
+    "expected_urls": []
+  },
+  {
+    "id": 51,
+    "input": "Shortened bare links: bit.ly/3xyz, tinyurl.com/abc, ow.ly/123",
+    "expected_urls": ["https://bit.ly/3xyz", "https://tinyurl.com/abc", "https://ow.ly/123"]
+  },
+  {
+    "id": 52,
+    "input": "Look at https://sub.domain.co.uk:8080/path?a=1&b=2#frag",
+    "expected_urls": ["https://sub.domain.co.uk:8080/path?a=1&b=2#frag"]
+  },
+  {
+    "id": 53,
+    "input": "Full paragraph: Welcome to Spectra! Check spectra.dev/docs for guides. Follow @spectra on Twitter. Email team@spectra.dev. Also see github.com/spectra-org/spectra.",
+    "expected_urls": ["https://spectra.dev/docs", "https://github.com/spectra-org/spectra"]
+  },
+  {
+    "id": 54,
+    "input": "Curly braces: {https://json.org/example} and backticks: `https://markdown.org/guide`",
+    "expected_urls": ["https://json.org/example", "https://markdown.org/guide"]
+  },
+  {
+    "id": 55,
+    "input": "Amazon affiliate link: amzn.to/3xyz or amazon.in/dp/B08N5WRWNW for the mic.",
+    "expected_urls": ["https://amzn.to/3xyz", "https://amazon.in/dp/B08N5WRWNW"]
+  }
+]
